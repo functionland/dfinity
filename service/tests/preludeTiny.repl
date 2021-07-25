@@ -1,0 +1,8 @@
+import CanCan = "rwlgt-iiaaa-aaaaa-aaaaa-cai";
+// assume the same identity as a `dfx call` command
+identity default "~/.config/dfx/identity/default/identity.pem";
+call CanCan.createTestData(
+  vec { "alice"; "bob"},
+  vec {
+    record { "bob"; "fish0" };
+  });
